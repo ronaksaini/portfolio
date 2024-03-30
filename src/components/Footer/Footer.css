@@ -1,0 +1,77 @@
+.footer-logo{
+    color: black;
+}
+.footer{
+    background-color: #fff;
+    width: 100%;
+    z-index: 2;
+}
+.footer-container{
+    padding: 30px 0px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left
+    ;
+}
+.footer-container p{
+    font-size: 15px;
+}
+.footer-icons{
+    font-size: 28px;
+    display: flex;
+    gap: 16px;
+}
+.socials{
+    color: rgb(0, 0, 0);
+}
+
+/* Small devices such as large phones (640px and up) */
+@media (min-width: 244px) and (max-width:767px){
+    .footer-icons{
+        font-size: 22px;
+        gap: 14px;
+    }
+    .footer-container{
+        width: 95%;
+    }
+    .footer-logo{
+        margin-left: 8px;
+        font-size: 28px;
+    }
+    .k1{
+        font-size: 28px;
+        color: #2ad883;
+    }
+    .footer-copyright{
+        font-size: 12px;
+    }
+}
+@media (min-width: 768px) and (max-width:1023px){
+        .k1{
+            font-size: 34px;
+            color: #2ad883;
+        }
+}
+/* Large devices such as laptops (1024px and up) */
+@media (min-width: 1024px) and (max-width:1279px){
+    .k1{
+        font-size: 28px;
+        color: #2ad883;
+    }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media (min-width: 1280px) and (max-width:1444px){
+    .k1{
+        font-size: 28px;
+        color: #2ad883;
+    }
+}

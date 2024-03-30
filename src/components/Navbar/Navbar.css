@@ -1,0 +1,155 @@
+.navbar{
+    width: 100%;
+    height: 125px;
+    background-color: #1e1d1d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 1px 1px 10px #121212;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+.logo{
+    color: #fff;
+    font-size: 36px;
+}
+.k{
+    color: #2ad883;
+    font-size: 38px;
+}
+.navlist{
+    flex: 0.55;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-btn{
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 80px;
+    color: #fff;
+    font-size: 34px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.nav-item{
+    font-size: 16px;
+    color: #cbcbcb;
+}
+.navlist li:last-child a{
+    background-color: #2ad883;
+    border: 1px solid #2ad883;
+    padding: 8px 12px;
+    color: #fff !important;
+    border-radius: 8px;
+}
+.dialog-box{
+    background-color: #2ad883;
+    position: absolute;
+    right: 0px;
+    top: 85px;
+    padding: 20px 32px;
+    color: #fff;
+    border-radius: 8px;
+}
+.info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.info-container button{
+    padding: 4px 8px;
+    background-color: red;
+    color: #fff;
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 4px;
+    font-weight: 650;
+}
+.info-container h2{
+    font-size: 22px;
+}
+/* Small devices such as large phones (640px and up) */
+@media (min-width: 244px) and (max-width:767px){
+    .navbar-container{
+        width: 100%;
+    }
+    .logo{
+        margin-left: 50px;
+    }
+    .navlist{
+        position: absolute;
+        top: 125px;
+        /* right: -100%; */
+        display: block;
+        height: 100vh;
+        width: 100%;
+        background-color: #2ad883;
+        text-align: center;
+        transition: 0.4s all ease-in-out;
+    }
+    .navlist li{
+        margin: 24px 0px;
+    }
+    .navlist li a{
+        color: #fff;
+    }
+    .menu-btn{
+        display: block;
+        right: 50px;
+    }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media (min-width: 768px) and (max-width:1023px){
+    .navbar-container{
+        width: 100%;
+    }
+    .logo{
+        margin-left: 80px;
+    }
+    .navlist{
+        position: absolute;
+        top: 125px;
+        /* right: -100%; */
+        display: block;
+        height: 100vh;
+        width: 100%;
+        background-color: #2ad883;
+        text-align: center;
+        transition: 0.4s all ease-in-out;
+    }
+    .navlist li{
+        margin: 24px 0px;
+    }
+    .navlist li a{
+        color: #fff;
+    }
+    .menu-btn{
+        display: block;
+    }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media (min-width: 1024px) and (max-width:1279px){
+    .navlist{
+        flex: 0.75;
+    }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media (min-width: 1280px) and (max-width:1444px){}

@@ -1,0 +1,88 @@
+.service{
+    background-color: #fff;
+    width: 100%;
+    background-image: url('../images/service-bg.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0px;
+}
+.service-container{
+
+}
+.service-box-container{
+    width: 80%;
+    height: 100%;
+    margin: 24px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.service-box{
+    width: 150px;
+    background-color: #2ad883;
+    margin: 34px 20px;
+    padding: 24px 18px;
+    border-radius: 12px;
+    transition: 0.5s all ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgb(255, 255, 255);
+}
+.service-box:hover{
+    transform: translateY(-22px);
+    cursor: pointer;
+}
+
+.service-icon{
+    font-size: 34px;
+    color: #fff;
+}
+.service-title{
+    font-size: 20px;
+    color: #fff;
+    margin: 8px 0px;
+}
+.service-para{
+    font-size: 14px;
+    color: #fcfcfc;
+}
+/* Small devices such as large phones (640px and up) */
+@media (min-width: 244px) and (max-width:319px){
+
+    .service-box-container{
+        width: 100%;
+    }
+    .service-title{
+        font-size: 12px;
+    }
+    .service-box{
+        width: 100px;
+        margin: 18px 12px;
+        padding: 18px;
+    }
+    
+}
+@media (min-width: 320px) and (max-width:767px){
+    .service-title{
+        font-size: 14px;
+    }
+    .service-box{
+        width: 120px;
+    }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media (min-width: 768px) and (max-width:1023px){
+    
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media (min-width: 1024px) and (max-width:1279px){
+    
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media (min-width: 1280px) and (max-width:1444px){}
